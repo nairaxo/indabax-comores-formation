@@ -412,46 +412,8 @@ python: test(**d)
 (3, 5, 0, 1)
 ``` 
 
-## Crédits
-Original : [Luca de Feo](https://github.com/defeo/MA2-ace) - *GitHub*  
-Modifications (cohérence Python 3.x) : [Axel Bellec](https://github.com/belekkk) - *GitHub*  
 
-
-# Installation de librairies
-
-L'installation de nouvelles librairies se fait au travers de la commande ``pip``. Comme nous utilisons Anaconda, toutes nos librairies seront contenus dans le dossier ``anaconda`` qui se trouve maintenant dans vos documents. On peut donc installer la librairie ``numpy`` en faisant
-
-```sh
-anaconda/bin/pip install numpy
-```
-
-Cependant, on peut très bien faire cela grâce au terminal IPython de Spyder, il suffit de faire
-
-```sh
-!pip install numpy
-```
-
-dans celui-ci.
-
-Des librairies (aussi appelés modules) célèbres de Python sont:
-
-- ``numpy`` pour la manipulation de matrices.
-- ``scipy`` pour les mathématiques et les algorithmes numériques.
-- ``pandas`` pour la manipulation de tableaux de données (comme les dataframes du langage R).
-- ``flask`` pour créer des sites webs statiques et dynamiques.
-- ``PIL`` pour créer des images.
-- ``BeautifulSoup`` pour parser des fichiers XML et HTML.
-- ``SQLAlchemy`` pour gérer des bases de données.
-- ``Requests`` pour interroger des APIs et récupérer le contenu de pages webs.
-- ``matplotlib`` pour faire des graphiques.
-- ``nltk`` pour faire de l'analyse textuelle.
-- ``nose`` pour faire des tests unitaires.
-- ``sympy`` pour faire du calcul symbolique.
-
-Ces librairies sont *très* utilisées par les utilisateurs de Python. Avoir un connaissance de ce qui existe déjà est une bonne chose, ça ne sert à rien d'essayer de réinventer la roue alors que d'excellentes solutions existent déjà.
-
-
-## Les Classes
+## Classes
 
 Source : <https://docs.python.org/3/tutorial/classes.html>
 
@@ -552,6 +514,44 @@ for animal in animals:
 
 Ces concepts de classes permettent de structurer et d'organiser le code de manière modulaire et réutilisable, facilitant ainsi la maintenance et l'évolution des programmes Python.
 
+
+## Crédits
+Original : [Luca de Feo](https://github.com/defeo/MA2-ace) - *GitHub*  
+Modifications (cohérence Python 3.x) : [Axel Bellec](https://github.com/belekkk) - *GitHub*  
+
+
+# Installation de librairies
+
+L'installation de nouvelles librairies se fait au travers de la commande ``pip``. Comme nous utilisons Anaconda, toutes nos librairies seront contenus dans le dossier ``anaconda`` qui se trouve maintenant dans vos documents. On peut donc installer la librairie ``numpy`` en faisant
+
+```sh
+anaconda/bin/pip install numpy
+```
+
+Cependant, on peut très bien faire cela grâce au terminal IPython de Spyder, il suffit de faire
+
+```sh
+!pip install numpy
+```
+
+dans celui-ci.
+
+Des librairies (aussi appelés modules) célèbres de Python sont:
+
+- ``numpy`` pour la manipulation de matrices.
+- ``scipy`` pour les mathématiques et les algorithmes numériques.
+- ``pandas`` pour la manipulation de tableaux de données (comme les dataframes du langage R).
+- ``flask`` pour créer des sites webs statiques et dynamiques.
+- ``PIL`` pour créer des images.
+- ``BeautifulSoup`` pour parser des fichiers XML et HTML.
+- ``SQLAlchemy`` pour gérer des bases de données.
+- ``Requests`` pour interroger des APIs et récupérer le contenu de pages webs.
+- ``matplotlib`` pour faire des graphiques.
+- ``nltk`` pour faire de l'analyse textuelle.
+- ``nose`` pour faire des tests unitaires.
+- ``sympy`` pour faire du calcul symbolique.
+
+Ces librairies sont *très* utilisées par les utilisateurs de Python. Avoir un connaissance de ce qui existe déjà est une bonne chose, ça ne sert à rien d'essayer de réinventer la roue alors que d'excellentes solutions existent déjà.
 
 
 # Conclusion
