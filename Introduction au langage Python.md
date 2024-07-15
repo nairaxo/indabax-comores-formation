@@ -22,6 +22,7 @@ Nous utiliserons donc Python pour générer des pages web et pour gérer une bas
     - [Compréhensions](#compr%C3%A9hensions)
     - [Opérateurs fonctionnels sur les listes](#op%C3%A9rateurs-fonctionnels-sur-les-listes)
   - [Fonctions](#fonctions)
+  - [Classes](#classes)
   - [Crédits](#cr%C3%A9dits)
 - [Installation de librairies](#installation-de-librairies)
 
