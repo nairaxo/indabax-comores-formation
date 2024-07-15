@@ -449,6 +449,110 @@ Des librairies (aussi appelés modules) célèbres de Python sont:
 
 Ces librairies sont *très* utilisées par les utilisateurs de Python. Avoir un connaissance de ce qui existe déjà est une bonne chose, ça ne sert à rien d'essayer de réinventer la roue alors que d'excellentes solutions existent déjà.
 
+
+## Les Classes
+
+Source : <https://docs.python.org/3/tutorial/classes.html>
+
+Python est un langage orienté objet, et les classes en sont un élément fondamental. Les classes permettent de structurer des données et des fonctionnalités ensemble.
+
+### Définition d'une Classe
+
+Les classes en Python sont définies par le mot-clé `class`, suivi du nom de la classe et de deux points. Les méthodes d'une classe, y compris son constructeur, sont définies de manière similaire aux fonctions, mais elles doivent toujours inclure le paramètre `self` comme premier paramètre, qui fait référence à l'instance de la classe.
+
+```python
+class MyClass:
+    def __init__(self, param1, param2):
+        self.param1 = param1
+        self.param2 = param2
+    
+    def method(self):
+        return self.param1 + self.param2
+```
+
+### Instanciation d'une Classe
+
+Pour créer une instance d'une classe, on appelle la classe comme une fonction, en passant les arguments nécessaires à son constructeur `__init__`.
+
+```python
+instance = MyClass(5, 10)
+print(instance.method())  # Affichera 15
+```
+
+### Héritage
+
+Une classe peut hériter d'une autre classe. Cela permet de créer une nouvelle classe qui réutilise le code d'une classe existante.
+
+```python
+class DerivedClass(MyClass):
+    def __init__(self, param1, param2, param3):
+        super().__init__(param1, param2)
+        self.param3 = param3
+    
+    def new_method(self):
+        return self.param1 * self.param3
+```
+
+### Méthodes et Attributs
+
+Les méthodes sont des fonctions définies au sein des classes. Les attributs sont des variables qui appartiennent aux instances de la classe. Les attributs peuvent être définis soit dans le constructeur `__init__`, soit directement dans la classe, pour les attributs de classe.
+
+```python
+class Example:
+    class_attribute = "I am a class attribute"
+    
+    def __init__(self, instance_attribute):
+        self.instance_attribute = instance_attribute
+    
+    def display_attributes(self):
+        return f"Class attribute: {self.class_attribute}, Instance attribute: {self.instance_attribute}"
+
+example = Example("I am an instance attribute")
+print(example.display_attributes())
+```
+
+### Encapsulation
+
+L'encapsulation est une des caractéristiques principales de la programmation orientée objet. Elle permet de cacher les détails internes d'une classe et de ne rendre accessibles que certaines méthodes ou attributs. En Python, ceci est réalisé en préfixant les attributs avec un underscore `_` pour indiquer qu'ils sont privés.
+
+```python
+class Encapsulated:
+    def __init__(self):
+        self._hidden_attribute = "This is hidden"
+
+    def get_hidden_attribute(self):
+        return self._hidden_attribute
+
+enc = Encapsulated()
+print(enc.get_hidden_attribute())
+```
+
+### Polymorphisme
+
+Le polymorphisme permet d'utiliser une même interface pour des types différents. En Python, cela se fait principalement par le biais des méthodes et des classes héritées.
+
+```python
+class Animal:
+    def speak(self):
+        raise NotImplementedError("Subclasses must implement this method")
+
+class Dog(Animal):
+    def speak(self):
+        return "Woof!"
+
+class Cat(Animal):
+    def speak(self):
+        return "Meow!"
+
+animals = [Dog(), Cat()]
+for animal in animals:
+    print(animal.speak())
+```
+
+Ces concepts de classes permettent de structurer et d'organiser le code de manière modulaire et réutilisable, facilitant ainsi la maintenance et l'évolution des programmes Python.
+
+
+
 # Conclusion
 
 Vous devriez maintenant avoir les bases pour bien attaquer la formation suivante sur le Machine Learning. N'hésitez pas à envoyer un mail à **``naira.abdoumohamed@gmail.com``** si vous avez des questions.
