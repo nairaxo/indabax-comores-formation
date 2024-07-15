@@ -1,17 +1,14 @@
 # Avant-propos
 
-Durant le projet nous utiliserons en grande partie le langage Python. Bien qu'il ne soit pas enseigné en SID, ce n'est pas un langage complexe. Au contraire, la syntaxe est plus claire que d'autres langages et on s'y habitue très vite par rapport à d'autres langages.
+Durant le projet nous utiliserons en grande partie le langage Python. Ce n'est pas un langage complexe. Au contraire, la syntaxe est plus claire que d'autres langages et on s'y habitue très vite par rapport à d'autres langages.
 
 Les avantages de Python sont nombreux. D'une part c'est sans doute le langage de script le plus utilisé au monde car on peut quasiment tout faire avec: programmation web, statistiques, machine learning, gestion de bases de données... La communauté de Python est la plus grande dans le monde de la programmation: si vous voulez quelque chose, quelqu'un l'a sûrement déjà fait. Quelque soit votre problème en Python vous pourrez trouver la solution sur le net sans trop de problème, même en français.
 
 Nous utiliserons donc Python pour générer des pages web et pour gérer une base de données. Il y a évidemment beaucoup d'avantages à ce que tous les groupes utilisent le même langage de programmation. Les élèves pourront s'entraider et la distribution du code se fera plus aisément, surtout en combinaison avec GitHub.
 
-Enfin, il faut dire que ça vaut la peine de s'intéresser à Python, c'est un langage qui sera forcément présent dans l'écosystème informatique des années à venir.
-
 # Table des matières
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-- [Installation](#installation)
 - [Syntaxe générale](#syntaxe-g%C3%A9n%C3%A9rale)
   - [Variables et assignement](#variables-et-assignement)
   - [Syntaxe](#syntaxe)
@@ -48,40 +45,6 @@ Enfin, il faut dire que ça vaut la peine de s'intéresser à Python, c'est un l
 - [Conclusion](#conclusion-2)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-# Installation
-
-Il y'a deux versions de Python, la 2 et la 3. La 2 ne sera plus maintenue à partir de 2017, il vaut donc mieux se mettre directement à la 3 (on est actuellement à la version 3.5). La raison pour laquelle certaines personnes ne veulent pas passer de la 2 à la 3 est que certaines librairies existent seulement pour la version 2, mais c'est de plus en plus négligeable.
-
-Il existe de nombreuses façons d'installer Python, une des meilleures est d'utiliser le package Anaconda. En plus d'installer Python, Anaconda contient des librairies célèbres comme ``numpy``, ``scipy`` et ``pandas`` (nous en parlerons plus tard) et une interface graphique très pratique qui s'appelle Spyder (un peu comme RStudio pour le langage R).
-
-- Commencer par télécharger la version 3.5 d'Anaconda [ici](https://www.continuum.io/downloads).
-- Pour Mac et Windows, vous aurez maintenant accès à une application qui s'appelle ``Anaconda``, quand vous l'ouvrez vous devriez obtenir le menu suivant:
-
-![Anaconda](http://i.imgur.com/eZ5pQ1j.png)
-
-- Sur Ubuntu, il vous faudra lacer les commandes suivantes:
-
-```sh
-# On accède au dossier ``téléchargements``
-cd téléchargements/
-# On autorise le script à s'exécuter 
-chmod +x Anaconda3-2.4.1-Linux-x86_64.sh
-# On l'exécute
-./Anaconda3-2.4.1-Linux-x86_64.sh
-# On dit au système qu'il doit utiliser le Python d'Anaconda
-export PATH="$HOME/anaconda/bin:$PATH"
-```
-
-- Lancez maintenant l'application Spyder à partir du menu (le chargement prend un peu de temps). L'interface ressemble à l'image suivante:
-
-![Spyder](http://i.imgur.com/E8NnJA2.png)
-
-- Voilà, vous avez installé Python et vous pouvez commencer à coder!
-
-Spyder se découpe en trois parties. A gauche vous pouvez écrire vos scripts (des fichiers qui se terminent en ``.py``). Vous pouvez l'exécutez avec le raccourci ``Commande+Entrée`` ou bien en cliquant sur la flèche verte dans la barre d'outils. Le code s'exécute dans le terminal en bas à droite. Enfin, on peut voir les variables que l'on manipule de façon élégante dans la fenêtre en haut à droite.
-
-Le terminal d'en bas à droite est en fait un "super-terminal" destiné spécifiquement au développement Python, il s'appelle IPython et regorge de nombreuses fonctionnalités très pratiques. Par exemple, sur l'image précédente, le graphique s'affiche dans le terminal, cela et d'autres petites choses sont évidemment des artifices, mais elles rendent la développement bien plus agréable.
 
 # Syntaxe générale
 
