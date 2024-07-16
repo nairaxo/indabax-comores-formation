@@ -411,27 +411,6 @@ python: test(**d)
 ``` 
 
 
-## Classes
-
-Source : <https://docs.python.org/3/tutorial/classes.html>
-
-Python est un langage orienté objet, et les classes en sont un élément fondamental. Les classes permettent de structurer des données et des fonctionnalités ensemble.
-
-### Définition d'une Classe
-
-Les classes en Python sont définies par le mot-clé `class`, suivi du nom de la classe et de deux points. Les méthodes d'une classe, y compris son constructeur, sont définies de manière similaire aux fonctions, mais elles doivent toujours inclure le paramètre `self` comme premier paramètre, qui fait référence à l'instance de la classe.
-
-```python
-class MyClass:
-    def __init__(self, param1, param2):
-        self.param1 = param1
-        self.param2 = param2
-    
-    def method(self):
-        return self.param1 + self.param2
-```
-
-
 # Installation de librairies
 
 L'installation de nouvelles librairies se fait au travers de la commande ``pip``. Comme nous utilisons Anaconda, toutes nos librairies seront contenus dans le dossier ``anaconda`` qui se trouve maintenant dans vos documents. On peut donc installer la librairie ``numpy`` en faisant
