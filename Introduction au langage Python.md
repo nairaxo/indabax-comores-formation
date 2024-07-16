@@ -22,6 +22,7 @@ Nous utiliserons donc Python pour générer des pages web et pour gérer une bas
     - [Compréhensions](#compr%C3%A9hensions)
     - [Opérateurs fonctionnels sur les listes](#op%C3%A9rateurs-fonctionnels-sur-les-listes)
   - [Fonctions](#fonctions)
+  - [Données](#données)
 - [Installation de librairies](#installation-de-librairies)
 
 - [Conclusion](#conclusion-2)
@@ -409,6 +410,96 @@ python: d = { 'a' : 3, 'b' : 5, 'd' : 1 }
 python: test(**d)
 (3, 5, 0, 1)
 ``` 
+
+## Données
+
+Python offre plusieurs bibliothèques pour lire des fichiers CSV, mais la plus couramment utilisée est `pandas`.
+
+### Utilisation de `pandas`
+
+```python
+import pandas as pd
+
+# Lire un fichier CSV
+df = pd.read_csv('fichier.csv')
+print(df.head())
+```
+
+### Utilisation de la Bibliothèque `csv`
+
+```python
+import csv
+
+# Lire un fichier CSV
+with open('fichier.csv', mode='r') as file:
+    csv_reader = csv.reader(file)
+    for row in csv_reader:
+        print(row)
+```
+
+## Lecture des Données depuis un Fichier Excel
+
+Pour lire des fichiers Excel, `pandas` est également très efficace. Vous aurez besoin d'installer `openpyxl` ou `xlrd` pour lire les fichiers `.xlsx` ou `.xls` respectivement.
+
+### Utilisation de `pandas`
+
+```python
+import pandas as pd
+
+# Lire un fichier Excel
+df = pd.read_excel('fichier.xlsx')
+print(df.head())
+```
+
+## Lecture des Données depuis un Fichier Texte
+
+Les fichiers texte peuvent être lus en utilisant les méthodes intégrées de Python.
+
+### Lecture Ligne par Ligne
+
+```python
+# Lire un fichier texte ligne par ligne
+with open('fichier.txt', 'r') as file:
+    lines = file.readlines()
+    for line in lines:
+        print(line.strip())
+```
+
+### Lecture Complète
+
+```python
+# Lire tout le contenu d'un fichier texte
+with open('fichier.txt', 'r') as file:
+    content = file.read()
+    print(content)
+```
+
+## Lecture des Données depuis un Fichier JSON
+
+Pour lire des fichiers JSON, vous pouvez utiliser la bibliothèque intégrée `json`.
+
+### Utilisation de la Bibliothèque `json`
+
+```python
+import json
+
+# Lire un fichier JSON
+with open('fichier.json', 'r') as file:
+    data = json.load(file)
+    print(data)
+```
+
+### Utilisation de `pandas`
+
+```python
+import pandas as pd
+
+# Lire un fichier JSON
+df = pd.read_json('fichier.json')
+print(df.head())
+```
+
+Ces exemples montrent comment lire des données depuis divers formats de fichiers en Python, en utilisant principalement les bibliothèques `pandas` et `json`. En fonction de vos besoins spécifiques, vous pouvez choisir l'approche la plus appropriée pour votre projet.
 
 
 # Installation de librairies
